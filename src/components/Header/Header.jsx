@@ -13,11 +13,15 @@ function Header({ weatherData, onAddClick }) {
         </p>
       </div>
       <div className="header__right">
-        <button className="header__add-button" type="button" onClick={onAddClick}>
+        <button
+          className="header__add-button"
+          type="button"
+          onClick={onAddClick}
+        >
           + Add clothes
         </button>
-        <p className="header__username">Feylie</p>
-        <div className="header__avatar">F</div>
+        <p className="header__username">#user</p>
+        <div className="header__avatar">#</div>
       </div>
     </header>
   );

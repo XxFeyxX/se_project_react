@@ -1,5 +1,5 @@
 import WeatherCard from "../WeatherCard/WeatherCard";
-import ItemCard from "./ItemCard";
+import ItemCard from "../ItemCard/ItemCard";
 
 function Main({ weatherData, clothingItems, onCardClick }) {
   const weatherType =

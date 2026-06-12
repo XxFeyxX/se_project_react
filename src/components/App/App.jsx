@@ -12,9 +12,7 @@ function App() {
   const [selectedCard, setSelectedCard] = useState({});
 
   const weatherData = {
-    temperature: {
-      F: 75,
-    },
+    temperature: 75,
     city: "New York",
     type: "sunny",
   };

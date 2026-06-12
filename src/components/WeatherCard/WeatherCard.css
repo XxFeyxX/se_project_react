@@ -1,0 +1,52 @@
+.weather-card {
+  position: relative;
+  height: 80px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 0 0 40px;
+  background-color: #00a3ff;
+}
+
+.weather-card__temp {
+  position: absolute;
+  top: 20px;
+  left: 16px;
+  margin: 0;
+  z-index: 5;
+  color: white;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.weather-card__sun {
+  position: absolute;
+  top: -12px;
+  right: -8px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: #ffde00;
+  z-index: 2;
+}
+
+.weather-card__cloud {
+  position: absolute;
+  background-color: white;
+  border-radius: 50px;
+  z-index: 3;
+}
+
+.weather-card__cloud_large {
+  width: 95px;
+  height: 38px;
+  right: 0;
+  bottom: 0;
+}
+
+.weather-card__cloud_small {
+  width: 58px;
+  height: 58px;
+  right: 50px;
+  bottom: -18px;
+}

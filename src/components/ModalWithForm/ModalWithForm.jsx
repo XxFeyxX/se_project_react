@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import "./ModalWithForm.css";
 
 function ModalWithForm({ title, name, buttonText, isOpen, onClose, children }) {
   useEffect(() => {

@@ -5,6 +5,7 @@ import Footer from "../Footer/Footer";
 import ModalWithForm from "../ModalWithForm/ModalWithForm";
 import ItemModal from "../ItemModal/ItemModal";
 import { defaultClothingItems } from "../../utils/clothingItems";
+import "./App.css";
 
 function App() {
   const [clothingItems, setClothingItems] = useState(defaultClothingItems);

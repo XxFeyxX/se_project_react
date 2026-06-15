@@ -1,0 +1,143 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0 0 0 / 30%);
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    visibility 0.3s,
+    opacity 0.3s ease;
+}
+
+.modal_is-opened {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal__content {
+  position: relative;
+  width: 496px;
+  min-height: 436px;
+  padding: 28px 28px 36px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: #fff;
+  font-family: "Cabinet Grotesk", Arial, sans-serif;
+}
+
+.modal__title {
+  margin: 0 0 24px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal__close-icon::before,
+.modal__close-icon::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  opacity: 0.3;
+}
+
+.modal__close-icon::before {
+  transform: rotate(45deg);
+}
+
+.modal__close-icon::after {
+  transform: rotate(-45deg);
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__label {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 24px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.modal__input {
+  margin: 8px 0 0;
+  padding: 0 0 4px;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.modal__input:focus {
+  outline: none;
+}
+
+.modal__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 32px;
+}
+
+.modal__legend {
+  margin: 0 0 12px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.modal__radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 8px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.modal__radio {
+  margin: 0;
+}
+
+.modal__submit {
+  width: 124px;
+  height: 36px;
+  border: none;
+  border-radius: 4px;
+  background-color: #000;
+  color: #fff;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.modal__submit:hover {
+  opacity: 0.6;
+}

@@ -3,14 +3,8 @@ import ItemCard from "../ItemCard/ItemCard";
 import "./Main.css";
 
 function Main({ weatherData, clothingItems, onCardClick }) {
-  const weatherType =
-    weatherData.temperature >= 75
-      ? "hot"
-      : weatherData.temperature >= 60
-        ? "warm"
-        : "cold";
   const filteredItems = clothingItems.filter(
-    (item) => item.weather === weatherType,
+    (item) => item.weather === weatherData.type,
   );
 
   return (
@@ -18,7 +12,7 @@ function Main({ weatherData, clothingItems, onCardClick }) {
       <WeatherCard weatherData={weatherData} />
       <section className="cards">
         <p className="cards__text">
-          Today is {weatherData.temperature}°F / You may want to wear:
+          Today is {weatherData.temp.F}°F / You may want to wear:
         </p>
         <ul className="cards__list">
           {filteredItems.map((item) => (
